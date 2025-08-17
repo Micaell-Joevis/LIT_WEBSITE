@@ -1,0 +1,279 @@
+body {
+    margin-top: 70px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.slideshow-container {
+    width: 100%;
+    height: 700px;
+    margin: 0 auto 0 auto;
+    overflow: hidden;
+    background: #555;
+}
+
+.enrol-slide {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: background-image 0.8s ease;
+}
+
+.enrol-slide h1 {
+    font-size: 52px;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    color: aliceblue;
+    text-shadow: 0px 0px 5px rgba(1, 1, 1, .7);
+}
+
+.enrol-slide h2 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: Verdana, sans-serif;
+    color: aliceblue;
+    text-shadow: 0px 0px 8px rgba(1, 1, 1, .7);
+}
+
+.Enroll-con {
+    padding: 40px;
+}
+
+.enrollButton {
+    height: 55px;
+    width: 180px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(1, 1, 1, .7);
+    background-color: #f4ca16;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: 0px 0px 5px rgba(1, 1, 1, .3);
+    color: #080808;
+    transition: all .3s, box-shadow .3s ease-in;
+}
+
+.enrollButton:hover,
+.enrollButton:focus {
+    position: relative;
+    bottom: 5px;
+    outline: 0;
+    border: 2px solid dodgerblue;
+    border-radius: 5px;
+    background: #0548ffff;
+    box-shadow: 0 0 15px #0548ffe2, -7px 12px 10px rgba(0, 0, 0, 0.8);
+    text-shadow: 0px 0px 5px rgba(1, 1, 1, .8);
+    color: #ecebebff;
+}
+
+.slideshow-arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    transform: translateY(-50%);
+    background: rgba(30, 30, 51, 0.7);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    font-size: 2.3rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.slideshow-arrow:hover,
+.slideshow-arrow:focus {
+    background: #f4ca16;
+    color: #222;
+    outline: none;
+    box-shadow: 0 0 10px rgba(1, 1, 1, .4);
+}
+
+#prevBtn {
+    left: 16px;
+}
+
+#nextBtn {
+    right: 16px;
+}
+
+.slideshow-dots {
+    position: absolute;
+    bottom: 24px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    transition: all .3s ease-out;
+    z-index: 40;
+}
+
+.slideshow-dot {
+    height: 12px;
+    width: 12px;
+    background: #000000dd;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: all .8s ease;
+}
+
+.slideshow-dot.active {
+    position: relative;
+    bottom: 3px;
+    height: 13px;
+    width: 13px;
+    background: #f4ca16;
+    opacity: 1;
+}
+
+.card2 {
+    background: linear-gradient(to right, #073fdaff 40%, #163791 100%);
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    width: auto;
+    padding: 40px 100px 70px 150px;
+}
+
+.card2 h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    align-self: start;
+    letter-spacing: 1px;
+    color: #f4f4f4;
+    text-shadow: 0 0 5px rgba(8, 8, 8, 0.5);
+    padding: 20px 0 20px 0;
+}
+
+.card2 h3 {
+    font-size: 28px;
+    letter-spacing: 1px;
+    text-align: start;
+    line-height: 40px;
+    color: #c4c4c4ff;
+    text-shadow: 0 0 5px rgba(126, 126, 126, 0.21);
+}
+
+.notice {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #d9d9d9ff;
+}
+
+.notice h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(35, 35, 35, 1);
+    font-size: 28px;
+}
+
+.notice h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(32, 32, 32, 0.8);
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+
+    .enrol-slide {
+        padding: 20px;
+    }
+
+    .enrol-slide h1 {
+        letter-spacing: 1px;
+        font-size: 37px;
+        text-align: center;
+    }
+
+    .enrol-slide h2 {
+        text-align: center;
+        font-size: 30px;
+        text-shadow: 0px 0px 8px rgba(1, 1, 1, .7);
+    }
+
+    .slideshow-arrow {
+        position: absolute;
+        top: 40%;
+        height: 30px;
+        width: 30px;
+        font-size: 25px;
+    }
+
+    .Enroll-con {
+        padding: 30px;
+    }
+
+    .enrollButton {
+        height: 38px;
+        width: 150px;
+        font-size: 13px;
+        font-weight: bold;
+        letter-spacing: .5px;
+    }
+
+    .enrollButton:focus {
+        box-shadow: 0 0 15px #0548ffe2, -5px 10px 8px rgba(0, 0, 0, 0.7);
+    }
+
+    .slideshow-container {
+        height: 500px;
+    }
+
+    .slideshow-dots {
+        position: relative;
+        bottom: 30px;
+    }
+
+    .slideshow-dot {
+        height: 10px;
+        width: 10px;
+    }
+
+    .slideshow-dot.active {
+        height: 12px;
+        width: 12px;
+    }
+
+    .card2 {
+        padding: 20px 50px 35px 70px;
+
+    }
+
+    .card2 h1 {
+        font-size: 30px;
+        text-shadow: 0 0 10px rgba(8, 8, 8, 0.4);
+    }
+
+    .card2 h3 {
+        font-size: 21px;
+        line-height: 30px;
+    }
+
+    .notice h2 {
+        font-size: 21px;
+    }
+
+    .notice h4 {
+        font-size: 15px;
+    }
+}
